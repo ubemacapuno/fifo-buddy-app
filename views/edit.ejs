@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>FIFO App - Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="fifobuddy-container">
+        <h2>Edit FIFO Item</h2>
+        <section class="item">
+            <ul class="item-list">
+                <% fifoBuddyItems.forEach(item => { %>
+                    <!--Display the list items like normal EXCEPT for the item that is being EDITED-->
+                    <% if (item._id==idItem) { %>
+                        <li class="fifo-list-item">
+                            <!-- Add a form for editing: -->
+                            <form action="/edit/<%= item._id %>" method="POST">
+                                <!--In the form, show the values of the item you are trying to edit:-->
+                                <input type="text" value="<%= item.item %>" name="item">
+                                <input type="date" name="expirationDate" value="<%= item.expirationDate %>">
+                                <!--Add confirm and cancel buttons-->
+                                <button type="submit" class="confirm">Confirm</button>
+                                <a href="/" class="cancel">Cancel</a>
+                            </form>
+                        </li>
+                        <% } else { %>
+                            <li class="fifo-list-item">
+                                <div class="fifo-list-item-name">
+                                    <%= item.item %>
+                                </div>
+                                <div class="fifo-list-item-expiration-date">
+                                    <%= item.expirationDate %>
+                                </div>
+                                <a href="/edit/<%= item._id %>" class="edit"> <span class="fas fa-edit"></span>
+                                </a>
+                                <a href="/remove/<%= item._id %>" class="remove"> <span class="fas fa-trash"></span>
+                                </a>
+                            </li>
+                            <% } %>
+                                <% }) %>
+            </ul>
+        </section>
+    </section>
+</body>
