@@ -13,7 +13,7 @@ The inspiration for this project came from my background in the pharmaceutical a
 
 ## How It Will Be Made:
 
-**Front-End:** React
+**Front-End:** React (current version is EJS)
 
 **Back-End:** Node/Express, MongoDB
 
