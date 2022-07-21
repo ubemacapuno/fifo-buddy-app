@@ -17,4 +17,4 @@ The inspiration for this project came from my background in the pharmaceutical a
 
 **Back-End:** Node/Express, MongoDB
 
-Currently, the Front-End is EJS, and back-end is Node/Express, MongoDB/Mongoose. I will add more details as the project progresses!
+Currently, the Front-End is EJS to make this project a minimal viable product. I will plan to refactor using React at a later time, and will update the repo accordingly.
