@@ -13,8 +13,8 @@ The inspiration for this project came from my background in the pharmaceutical a
 
 ## How It's Made:
 
-**Front-End:** React (current version is EJS)
+**Front-End:** EJS (HTML/CSS/JavaScript). Planning on using either React or Svelte in the future.
 
 **Back-End:** Node/Express, MongoDB
 
-Currently, the Front-End is EJS to make this project a minimum viable product. I will plan to refactor using React at a later time, and will update the repo accordingly.
+Currently, the Front-End is EJS to make this project a minimum viable product. I will plan to refactor using a framework at a later time, and will update the repo accordingly!
