@@ -7,7 +7,7 @@
   </tr>
 
 ## Description:
-FIFO Buddy isa full-stack inventory management and equipment maintenance web application. It will allow users to add and update items, item details (part numbers, expiration dates, etc.), as well as equipment information (serial numbers, scheduled maintenance dates, etc.). It will utilize CRUD operations, authentication, and RESTful APIs.
+FIFO Buddy is a full-stack inventory management and equipment maintenance web application. It will allow users to add and update items, item details (part numbers, expiration dates, etc.), as well as equipment information (serial numbers, scheduled maintenance dates, etc.). It will utilize CRUD operations, authentication, and RESTful APIs.
 
 The inspiration for this project came from my background in the pharmaceutical and medical device manufacturing, where material expiry and equipment maintenance are highly regulated. This application will help users to stay up-to-date with their inventory management and maintenance schedules. The application is still a work in progress.
 
